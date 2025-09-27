@@ -108,7 +108,7 @@ def line(exponent):
     return picture
 
 # Main loop: Try different scales (exponents) to estimate fractal dimension
-for exponent in range(0, 7):  # Increases image size/decreases pixel size by 2x each time
+for exponent in range(0, 9):  # Increases image size/decreases pixel size by 2x each time
     exponents.append(exponent)
     
     #uncomment one of the following to choose the shape to analyze
@@ -175,8 +175,3 @@ plt.legend()
 plt.show()
 
 print("Dimensionality found: " + str(slope))  # Estimated fractal dimension
-
-# plt.scatter(x, y)
-# plt.show
-
-# shapefile = gpd.read_file()
